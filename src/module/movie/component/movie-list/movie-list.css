@@ -1,0 +1,121 @@
+.movie-list-page {
+    display: flex;
+    color: var(--primary-white) !important;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.m-b-160 {
+    margin-bottom: 160px;
+}
+
+.movie-list-page .movie-list-head {
+    color: var(--primary-white);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.movie-list-page .logout-text {
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.movie-list-page .logout-text:hover span {
+    border-bottom: 1px solid var(--primary-white);
+}
+
+.movie-list-page .add-movie-icon,
+.movie-list-page .logout-icon {
+    height: 28px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.movie-list-page .movie-list-card {
+    background-color: var(--primary-green-dark);
+    padding: 8px 8px 16px 8px !important;
+    border-radius: 12px;
+    border: none;
+}
+
+.movie-list-page .movie-list-card .movie-poster-image {
+    border-radius: 12px;
+    min-height: 400px;
+}
+
+.movie-list-page .card-text {
+    color: var(--primary-white);
+    font-size: 14px;
+}
+
+.movie-list-page .movie-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.empty-movie-list {
+    height: 65vh;
+}
+
+.add-movie-btn {
+    border-radius: 10px !important;
+    background: var(--primary, #2BD17E) !important;
+    display: inline-flex !important;
+    padding: 16px 28px;
+    align-items: flex-start !important;
+    gap: 5px !important;
+    color: var(--primary-white) !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+@media screen and (max-width: 576px) {
+    .movie-list-page .movie-list-head {
+        font-size: 30px;
+    }
+
+    .movie-list-page .logout-text {
+        margin-top: 4px;
+    }
+
+    .movie-list-page .movie-list-card .movie-poster-image {
+        min-height: 197px !important;
+    }
+}
+
+@media only screen and (min-width:576.99px) and (max-width: 768px) {
+    .movie-list-page .movie-list-head {
+        line-height: 40px;
+        font-size: 32px;
+    }
+
+    .movie-list-page .movie-list-card .movie-poster-image {
+        min-height: 445px !important;
+    }
+
+    .movie-list-page .movie-name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .movie-list-page .movie-year {
+        font-size: 14px;
+    }
+
+    .empty-movie-list {
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: 40px !important;
+        text-align: center;
+    }
+
+    .add-movie-btn {
+        width: 100%;
+        height: 56px;
+        padding: unset;
+    }
+}

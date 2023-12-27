@@ -1,0 +1,87 @@
+.login-page {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh;
+    text-align: center;
+}
+
+.login-page .login-card {
+    background: #093545 !important;
+    color: #ffffff !important;
+}
+
+.login-page .login-card .login-head {
+    font-weight: 600 !important;
+}
+
+.login-page .login-card .login-input {
+    height: 45px;
+    border-radius: 10px;
+    background: var(--secondary-green);
+    color: var(--primary-white);
+}
+
+.login-page .login-card .login-input:focus,
+.login-page .login-card .login-check-input:focus {
+    box-shadow: none !important;
+}
+
+
+.login-page .login-card .login-input::placeholder,
+.login-page .login-card .check-label {
+    color: var(--primary-white);
+    font-size: 14px;
+}
+
+.login-page .login-card .login-check-input {
+    background-color: var(--secondary-green);
+}
+
+.login-page .login-card .login-eye {
+    transform: translate(-50%);
+    right: 6px;
+    top: 12px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* .login-page .login-card .check-label {
+    font-size: 14px;
+} */
+
+.login-page .login-card .login-btn {
+    border-radius: 10px !important;
+    background: var(--primary, #2BD17E) !important;
+    display: inline-flex !important;
+    padding: 15px 126px !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+    color: var(--primary-white) !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none;
+}
+
+.login-page .login-card .login-btn:disabled {
+    cursor: not-allowed !important;
+    pointer-events: unset !important;
+}
+
+.login-page .login-card .login-btn:disabled:hover {
+    background: var(--primary, #2BD17E) !important;
+}
+
+.login-page .login-card .login-btn:hover {
+    background: var(--primary-light-green) !important;
+}
+
+@media (max-width: 765.98px) {
+    .login-page .login-card .login-head {
+        font-weight: 600 !important;
+        font-size: 38px !important;
+        line-height: 56px;
+    }
+}
