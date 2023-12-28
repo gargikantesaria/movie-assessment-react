@@ -1,6 +1,6 @@
 export const config = {
     api: {
-        baseUrl: 'http://localhost:3003/v1',
+        baseUrl: 'https://movie-assessment-backend.vercel.app/v1',
     }
 }
 

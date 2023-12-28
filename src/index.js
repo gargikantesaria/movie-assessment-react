@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Login from './module/authentication/component/login/login';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -59,7 +60,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Navigate to='/login' />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/movie-list' element={<MovieList/>} />
+          <Route path='/movie-list' element={<MovieList />} />
           <Route path='/create-movie' element={<CreateMovie />} />
         </Routes>
       </BrowserRouter>
